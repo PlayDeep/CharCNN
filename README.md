@@ -34,22 +34,6 @@ ComeToMyHead是一个学术新闻搜索引擎，开始于2004年7月
 
 两个格式版本: db 和 xml
 
-DB Table
-
-+-------------+--------------+------+-----+-------------------+-------+
-| Field       | Type         | Null | Key | Default           | Extra |
-+-------------+--------------+------+-----+-------------------+-------+
-| source      | varchar(32)  |      | PRI |                   |       |
-| url         | varchar(255) |      | PRI |                   |       |
-| title       | text         | YES  | MUL | NULL              |       |
-| image       | varchar(255) | YES  |     | NULL              |       |
-| category    | varchar(32)  |      | PRI |                   |       |
-| description | text         | YES  |     | NULL              |       |
-| rank        | int(11)      | YES  |     | NULL              |       |
-| pubdate     | timestamp    | YES  |     | CURRENT_TIMESTAMP |       |
-| video       | varchar(255) | YES  |     | NULL              |       |
-+-------------+--------------+------+-----+-------------------+-------+
-
 其中的主题分类数据集由 Xiang Zhang (xiang.zhang@nyu.edu) 从以上数据集中构建
 https://github.com/mhjabreel/CharCNN/tree/master/data/ag_news_csv
 它来自于原始语料库中4个最大的类
